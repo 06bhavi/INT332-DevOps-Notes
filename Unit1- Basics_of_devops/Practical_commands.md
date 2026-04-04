@@ -2,10 +2,12 @@
 
 **System & Image Management**
 * `docker --version` : Check Docker version.
+* `docker info` : detailed information.
 * `docker images` : List all downloaded images.
 * `docker pull <image_name>` : Download an image (e.g., `docker pull ubuntu` or `docker pull python:3.11-slim`).
+* `docker push <image_name>` : Upload an image.
 * `docker rmi <username/image>` : Remove a specific image.
-* `docker history <image_name>` : View the layers of an image.
+* `docker history httpd` : View the layers of an image. (httpd is the image name)
 
 **Container Execution & Management**
 * `docker ps` : List currently running containers.

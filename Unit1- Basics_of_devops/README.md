@@ -1,10 +1,10 @@
 # Unit 1: Basics of DevOps Infrastructure
 
 ## 1. The Need for Containers: Virtualization vs. Containerization
-[cite_start]With changing times, businesses needed solutions to reduce overhead costs, enhance scalability, and standardize application deployment[cite: 191]. 
+With changing times, businesses needed solutions to reduce overhead costs, enhance scalability, and standardize application deployment. 
 
 ### Virtualization
-[cite_start]Virtualization is the process of partitioning a physical server into multiple virtual servers using software called a 'hypervisor' (e.g., VMware, VirtualBox)[cite: 196, 197]. 
+Virtualization is the process of partitioning a physical server into multiple virtual servers using software called a 'hypervisor' (e.g., VMware, VirtualBox). 
 * **How it works:** Each Virtual Machine (VM) contains a full Host OS, application code, and libraries.
 * **Drawbacks:** Heavy storage requirements, high memory usage, slow startup times, and lower overall system efficiency.
 
