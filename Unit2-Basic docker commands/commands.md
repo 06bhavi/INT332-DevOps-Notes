@@ -64,5 +64,28 @@
 - docker volume rm mydata
 - docker volume prune
 
+## Docker network
+- docker network ls
+- docker run -dit --name c1 nginx
+- docker inspect c1|findstr IPaddress
+- docker exec -it c1 ping c2
 
+- docker network create mynet
+- docker run -dit --name c1 --network mynet busybox
+- docker run -dit --name c2 --network mynet busybox
+- docker exec -it c1 ping c2
+
+- docker run --network host nginx
+- docker run -d --network host nginx 
+## The specific commands you can use in docker file 
+- FROM
+- PULL
+- RUN
+- CMD
+* After creating docker file we use these commands
+  - mkdir docker-demo 
+  - cd docker-demo
+  - docker build -t myubuntu .
+  - docker images
+  - docker run myubuntu
 
