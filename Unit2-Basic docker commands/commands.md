@@ -51,7 +51,7 @@
 **Basic commands used to create, inspect, verify, delete/remove the volumes**
 
 - docker volume create <volume name> | example : docker volume create mydata
-- docker name ls
+- docker mydata ls
 - docker volume inspect mydata
 - docker run -dit -v mydata:/app/data --name contl ubuntu :- attatching the volume(-v mydata:)  and path of data(/app/data)
 - docker exec -it contl bash
@@ -62,7 +62,7 @@
 - docker run -it -v mydata:/app/data ubuntu bash
 - cat/app/data/file1.txt
 - docker volume rm mydata
-- docker volume prune
+- docker volume prune :- used to delete all unused Docker volumes from your system.
 
 ## Docker network
 - docker network ls

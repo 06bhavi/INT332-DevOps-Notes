@@ -63,7 +63,7 @@ A registry is where developers push and pull container images.
 
 **The Standard Image Distribution Process:**
 1.  **Build:** `docker build -t myapp:v1.0 .`
-2.  **Tag:** `docker tag myapp:v1.0 username/myapp:v1.0`
+2.  **Tag:** `docker tag myapp:v1.0 username/myapp:v2.0`
 3.  **Login:** `docker login`
 4.  **Push:** `docker push username/myapp:v1.0`
 5.  **Pull (on server):** `docker pull username/myapp:v1.0`

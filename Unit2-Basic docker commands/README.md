@@ -186,20 +186,37 @@ after creating all this use these commands
 PAT- secure authentication
 
 ## question:- 
-you are assigned a basic devops task to deploy a static web page using docker.
+1. you are assigned a basic devops task to deploy a static web page using docker.
 - your objective is to : 
   pull the latest **NGINX docker image**
+ -> docker pull nginx
 - create a simple **HTML page**
+ -> index.html created in myapp3  
 - run the container and display the HTML page using **NGINX static hosting**
+ -> docker run -d -p 5001:5000 -- name mycontainer myapp3
 - use **docker volume mounting** to connect HTML file to the container
+ -> 
 
-## question:- 
-Imagine you're managing a project with multiple containers. Answer the following :
+2. Imagine you're managing a project with multiple containers. Answer the following :
 - how will you build an image and run a container?
+ -> docker build -t myapp3 .
+ -> docker run -d -p 5000:5000 --name mycontainer myapp3
 - how do you save changes made to a running container?
+ ->  docker commit mycontainer myapp3:v1
 - how can you go inside a container (for example, a web app and a database)?
+ -> docker exec -it mycontainer sh
 - how to pull image from docker hub
+ -> docker pull nginx
 
+3. you are required to create a customized MSQL docker image with a preloaded database and publish it to github container registry{GHCR}, then pull and verify it on another system.
+- configure a custom dockerfile based on the official MYSQL image 
+- configure the dockerfile to:
+  - set root password using environment variable.
+  - create a new database(e.g. college_db)
+  - import a sample SQL file (init.sql) containing one table (e.g students)
+  - at least 3 records
+- Build the docker image locally
+- tag the image properly for github container registry
 
 
 
